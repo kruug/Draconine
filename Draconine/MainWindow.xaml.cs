@@ -80,7 +80,8 @@ namespace Draconine
 
     private void btnSettings_Click(object sender, EventArgs e)
     {
-      //Settings.ShowDialog();
+      winSettings Settings = new winSettings();
+      Settings.ShowDialog();
     }
 
     private void panCurrent_Click(object sender, EventArgs e)

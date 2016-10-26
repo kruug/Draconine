@@ -53,3 +53,5 @@ C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\bin\Debug\Resources\weath
 C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\Draconine_Content.g.cs
 C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\winSettings.g.cs
+C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\winSettings.baml

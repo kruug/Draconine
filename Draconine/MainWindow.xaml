@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Draconine"
         mc:Ignorable="d"
-        Title="Currently" Height="240" Width="140" WindowStartupLocation="Manual" ResizeMode="NoResize" Icon="Resources/weather-icons/west.png">
+        Title="Currently" Height="240" Width="140" WindowStartupLocation="Manual" ResizeMode="NoResize" Icon="Resources/weather_icon.ico">
     <Grid>
         <GroupBox x:Name="grpCurrent" Header="Current Conditions" HorizontalAlignment="Center" Margin="17,10,17,0" VerticalAlignment="Top" Height="150" Width="100" FontSize="10">
             <Grid>
@@ -14,7 +14,7 @@
                 <Label x:Name="lblCurrentConditions" Content="Current Conditions" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" FontSize="12"/>
             </Grid>
         </GroupBox>
-        <Button x:Name="btnSettings" HorizontalAlignment="Left" Margin="10,176,0,0" VerticalAlignment="Top" Width="25">
+        <Button x:Name="btnSettings" HorizontalAlignment="Left" Margin="10,176,0,0" VerticalAlignment="Top" Width="25" Click="btnSettings_Click">
             <Image x:Name="imgSettings" Source="pack://siteoforigin:,,,/Resources/gear.png"/>
         </Button>
         <Button x:Name="btnAlert" HorizontalAlignment="Left" Margin="40,176,0,0" VerticalAlignment="Top" Width="25">
