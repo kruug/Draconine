@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Draconine
 {
-  class clsForecast
+  public class clsForecast
   {
     string date = ""; // Forecast for this date
     string longDate = "";

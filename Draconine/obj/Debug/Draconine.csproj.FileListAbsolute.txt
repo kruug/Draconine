@@ -10,8 +10,6 @@ C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\Draconine.Prope
 C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\Draconine.csproj.GenerateResource.Cache
 C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\Draconine.exe
 C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\Draconine.pdb
-C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\MainWindow.g.cs
-C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\MainWindow.baml
 C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\bin\Debug\Resources\3-Day.png
 C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\bin\Debug\Resources\8-Day.png
 C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\bin\Debug\Resources\about.png
@@ -55,3 +53,7 @@ C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\bin\Debug\Newtonsoft.Json
 C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\winSettings.g.cs
 C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\winSettings.baml
+C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\winCurrently.g.cs
+C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\winCurrently.baml
+C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\winDetails.g.cs
+C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\winDetails.baml

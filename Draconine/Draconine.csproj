@@ -37,6 +37,9 @@
   <PropertyGroup>
     <ApplicationIcon>Resources\weather_icon.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Draconine.App</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -63,10 +66,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="winDetails.xaml.cs">
+      <DependentUpon>winDetails.xaml</DependentUpon>
+    </Compile>
     <Compile Include="winSettings.xaml.cs">
       <DependentUpon>winSettings.xaml</DependentUpon>
     </Compile>
-    <Page Include="MainWindow.xaml">
+    <Page Include="winCurrently.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -76,10 +82,14 @@
     </Compile>
     <Compile Include="clsDataGetter.cs" />
     <Compile Include="clsForecast.cs" />
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="winCurrently.xaml.cs">
+      <DependentUpon>winCurrently.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="winDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="winSettings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

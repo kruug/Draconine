@@ -18,14 +18,14 @@ using System.Windows.Shapes;
 namespace Draconine
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for winCurrently.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class winCurrently : Window
     {
 
     clsForecast[] forecast = new clsForecast[10];
     clsDataGetter data = new clsDataGetter();
-    public MainWindow()
+    public winCurrently()
         {
             InitializeComponent();
 
@@ -55,7 +55,7 @@ namespace Draconine
     {
       forecast = data.getForecast(forecast);
 
-      lblCurrentTemp.Content = forecast[9].getSetTemp.ToString() + "\u00B0" + forecast[9].Units;
+      lblCurrentTemp.Content = forecast[9].getSetTemp + "\u00B0" + forecast[9].Units;
 
       lblCurrentConditions.Content = forecast[9].getSetSummary;
       
@@ -84,29 +84,10 @@ namespace Draconine
       Settings.ShowDialog();
     }
 
-    private void panCurrent_Click(object sender, EventArgs e)
+    private void grpCurrent_MouseDown(object sender, EventArgs e)
     {
-      //currentDetails.showDetails(forecast[9]);
-    }
-
-    private void lblCurrent_Click(object sender, EventArgs e)
-    {
-      //currentDetails.showDetails(forecast[9]);
-    }
-
-    private void lblCurrentTemp_Click(object sender, EventArgs e)
-    {
-      //currentDetails.showDetails(forecast[9]);
-    }
-
-    private void pbCurrentConditions_Click(object sender, EventArgs e)
-    {
-      //currentDetails.showDetails(forecast[9]);
-    }
-
-    private void lblCurrentConditions_Click(object sender, EventArgs e)
-    {
-      //currentDetails.showDetails(forecast[9]);
+      winDetails currentDetails = new winDetails();
+      currentDetails.showDetails(forecast[9]);
     }
 
     private void btnAlert_Click(object sender, EventArgs e)
