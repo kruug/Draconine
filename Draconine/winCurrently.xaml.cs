@@ -92,8 +92,8 @@ namespace Draconine
 
     private void btnAlert_Click(object sender, EventArgs e)
     {
-      //frmAlert currentAlerts = new frmAlert();
-      //currentAlerts.showAlerts(forecast[9]);
+      winAlert currentAlerts = new winAlert();
+      currentAlerts.showAlerts(forecast[9]);
     }
   }
 }

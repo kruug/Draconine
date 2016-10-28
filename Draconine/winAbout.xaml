@@ -1,0 +1,30 @@
+﻿<Window x:Class="Draconine.winAbout"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Draconine"
+        mc:Ignorable="d"
+        Title="About Draconine" Height="240" Width="420" ResizeMode="CanMinimize" Icon="Resources/weather_icon.ico">
+    <Grid>
+        <GroupBox x:Name="grpDraconem" Header="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="412" Height="90">
+            <GroupBox.Background>
+                <ImageBrush ImageSource="Resources/logo_back.png"/>
+            </GroupBox.Background>
+            <Image x:Name="imgLogo" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" MouseDown="imgLogo_MouseDown" Source="Resources/logo.png"/>
+        </GroupBox>
+        <GroupBox x:Name="grpCopyright" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Width="195" Height="106">
+            <Grid>
+                <Label x:Name="lblName" Content="Draconine" HorizontalAlignment="Left" VerticalAlignment="Top" Width="87" FontWeight="Bold"/>
+                <Label x:Name="lblVersion" Content="Version 2.2.6" Margin="92,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91"/>
+                <Label x:Name="lblCopyright" Content="Copyright 2016 DraconemSoft" Margin="0,26,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="183"/>
+                <Label x:Name="lblLicense" Content="Released under the MIT License" Margin="0,52,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="10" Width="183"/>
+                <Label x:Name="lblLink" Content="DraconemSoft on the Web" Margin="0,75,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="183" FontSize="10" Foreground="Blue" MouseDown="lblLink_MouseDown"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="grpPowered" HorizontalAlignment="Right" Margin="0,95,10,0" VerticalAlignment="Top" Width="195" Height="85" Background="Black">
+            <Image x:Name="image" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Source="Resources/dark_sky_logo.png"/>
+        </GroupBox>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="275,180,0,0" VerticalAlignment="Top" Width="75" Click="btnClose_Click"/>
+    </Grid>
+</Window>

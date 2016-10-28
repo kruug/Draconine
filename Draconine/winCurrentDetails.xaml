@@ -38,7 +38,7 @@
                 <Label x:Name="lblCurrentFeelsTemp" Content="Temp" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="198" FontWeight="Bold"/>
             </Grid>
         </GroupBox>
-        <GroupBox x:Name="grpSkyView" Header="Wind" HorizontalAlignment="Right" Margin="0,265,10,0" VerticalAlignment="Top" Height="82" Width="230">
+        <GroupBox x:Name="grpSkyView" Header="Sky View" HorizontalAlignment="Right" Margin="0,265,10,0" VerticalAlignment="Top" Height="82" Width="230">
             <Grid>
                 <Label x:Name="lblVisibility" Content="Visibility" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="198" FontWeight="Bold"/>
                 <Label x:Name="lblCloudCover" Content="Cloud Cover" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Width="198" FontWeight="Bold"/>
@@ -52,12 +52,12 @@
                 <Label x:Name="lblOzone" Content="Ozone" HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top" Width="198" FontWeight="Bold"/>
             </Grid>
         </GroupBox>
-        <GroupBox x:Name="grpLogo" HorizontalAlignment="Left" Margin="10,360,0,0" VerticalAlignment="Top" Height="132" Width="230" BorderThickness="0">
+        <GroupBox x:Name="grpLogo" HorizontalAlignment="Left" Margin="10,360,0,0" VerticalAlignment="Top" Height="132" Width="230" BorderThickness="0" MouseDown="grpLogo_MouseDown">
             <Grid Margin="0,0,0,0" Background="Black">
                 <Image x:Name="image" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Resources/dark_sky_logo.png"/>
             </Grid>
         </GroupBox>
-        <GroupBox x:Name="grpClose" HorizontalAlignment="Left" Margin="10,497,0,0" VerticalAlignment="Top" Height="80" Width="481">
+        <GroupBox x:Name="grpClose" HorizontalAlignment="Left" Margin="10,497,0,0" VerticalAlignment="Top" Height="80" Width="481" BorderThickness="0">
             <Grid>
                 <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Width="75" Click="btnClose_Click"/>
             </Grid>
