@@ -10,7 +10,7 @@
         <GroupBox x:Name="grpCurrent" Header="Current Conditions" HorizontalAlignment="Center" Margin="17,10,17,0" VerticalAlignment="Top" Height="150" Width="100" FontSize="10" MouseDown="grpCurrent_MouseDown">
             <Grid>
                 <Label x:Name="lblCurrentTemp" Content="Current Temp" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-                <Image x:Name="imgCurrentConditions" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" Height="50" Width="50" Source="Resources/weather-icons/compass.png"/>
+                <Image x:Name="imgCurrentConditions" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Height="50" Width="50" Source="Resources/weather-icons/compass.png"/>
                 <Label x:Name="lblCurrentConditions" Content="Current Conditions" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" FontSize="12"/>
             </Grid>
         </GroupBox>

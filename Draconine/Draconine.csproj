@@ -66,8 +66,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="winDetails.xaml.cs">
-      <DependentUpon>winDetails.xaml</DependentUpon>
+    <Compile Include="winCurrentDetails.xaml.cs">
+      <DependentUpon>winCurrentDetails.xaml</DependentUpon>
     </Compile>
     <Compile Include="winSettings.xaml.cs">
       <DependentUpon>winSettings.xaml</DependentUpon>
@@ -86,7 +86,7 @@
       <DependentUpon>winCurrently.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="winDetails.xaml">
+    <Page Include="winCurrentDetails.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

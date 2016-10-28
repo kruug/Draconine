@@ -55,5 +55,6 @@ C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\winSettings.g.c
 C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\winSettings.baml
 C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\winCurrently.g.cs
 C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\winCurrently.baml
-C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\winDetails.g.cs
-C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\winDetails.baml
+C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\winCurrentDetails.g.cs
+C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\winCurrentDetails.baml
+C:\Users\Allen.Schreiber\workspace\Draconine\Draconine\obj\Debug\App.baml

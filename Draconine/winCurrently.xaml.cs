@@ -86,7 +86,7 @@ namespace Draconine
 
     private void grpCurrent_MouseDown(object sender, EventArgs e)
     {
-      winDetails currentDetails = new winDetails();
+      winCurrentDetails currentDetails = new winCurrentDetails();
       currentDetails.showDetails(forecast[9]);
     }
 
