@@ -1,4 +1,4 @@
-# Desktop Weather
+# Draconine
 
 Currently, there is no decent weather forecasting program for the Windows desktop environment.  The Weather Channel does have one, but it's pretty large, a little flaky, and includes large advertisements.  This project is geared towards accomplishing the same goal but doing so in a smaller window with only the necessary information.
 
@@ -8,7 +8,7 @@ This program does use the Forecast API and does require an API key available fro
 
 ## Screenshot
 
-![App in action](https://kruug.org/draconemsoft/images/desktopweather/DesktopWeather_v2_3_0.png)
+![App in action](https://kruug.org/draconemsoft/images/desktopweather/Draconine_v2_3_0.png)
 
 ## Installation
 
