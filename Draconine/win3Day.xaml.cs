@@ -65,6 +65,10 @@ namespace Draconine
       lblTomorrowDate.Content = forecast[1].getSetDate;
       lblDayAfterDate.Content = forecast[2].getSetDate;
 
+      grpDay0.Header = forecast[0].getSetDay;
+      grpDay1.Header = forecast[1].getSetDay;
+      grpDay2.Header = forecast[2].getSetDay;
+
       lblLastUpdate.Content = "Last Updated: " + DateTime.Now.ToString();
 
       if(forecast[9].getSetAlertTitle != "")
@@ -128,6 +132,6 @@ namespace Draconine
     {
       winForecastDetails forecastDetails = new winForecastDetails();
       forecastDetails.showDetails(forecast[2]);
-    }
+    } 
   }
 }

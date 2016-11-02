@@ -22,9 +22,9 @@ namespace Draconine
     public winSettings()
     {
       InitializeComponent();
-      switch (Properties.Settings.Default.View)
+      switch (Properties.Settings.Default.ViewSettings)
       {
-        case "currently":
+        case "current":
           radCurrently.IsChecked = true;
           break;
         case "three":
@@ -40,16 +40,19 @@ namespace Draconine
     {
       if (radCurrently.IsChecked.Value)
       {
-        Properties.Settings.Default.View = "currently";
+        Properties.Settings.Default.ViewSettings = "current";
       } else if (rad3Day.IsChecked.Value)
       {
-        Properties.Settings.Default.View = "three";
+        Properties.Settings.Default.ViewSettings = "three";
       } else if (rad8Day.IsChecked.Value)
       {
-        Properties.Settings.Default.View = "eight";
+        Properties.Settings.Default.ViewSettings = "eight";
       }
 
       Properties.Settings.Default.Save();
+      
+      MessageBox.Show("Your settings have been saved." + Environment.NewLine + "Changes will be applied upon restart.", "Settings Saved", MessageBoxButton.OK, MessageBoxImage.Information);
+
       this.Close();
     }
   }

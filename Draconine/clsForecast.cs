@@ -11,6 +11,7 @@ namespace Draconine
   {
     string date = ""; // Forecast for this date
     string longDate = "";
+    string day = "";
     string summary = ""; // A human-readable text summary
     string icon = ""; // A machine-readable text summary of this data point
     string sunrise = ""; // The UNIX time of the last sunrise before the solar noon closest to local noon on the given day
@@ -212,6 +213,20 @@ namespace Draconine
       set
       {
         longDate = UnixTimeStampToLongDateTime(double.Parse(value));
+      }
+    }
+
+    public string getSetDay
+    {
+      get
+      {
+        return day;
+      }
+      set
+      {
+        string tempDate = UnixTimeStampToLongDateTime(double.Parse(value));
+        var splitDate = tempDate.Split(new[] { ',' }, 2);
+        day = splitDate[0];
       }
     }
 

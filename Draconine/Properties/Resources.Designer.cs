@@ -391,6 +391,15 @@ namespace Draconine.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to current.
+        /// </summary>
+        internal static string View {
+            get {
+                return ResourceManager.GetString("View", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap weather_alert {

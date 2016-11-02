@@ -49,6 +49,7 @@ namespace Draconine
         clsForecast tempForecast = new clsForecast();
         tempForecast.getSetDate = (string)weatherData.daily.data[i].time.ToString();
         tempForecast.getSetLongDate = (string)weatherData.daily.data[i].time.ToString();
+        tempForecast.getSetDay = (string)weatherData.daily.data[i].time;
         tempForecast.getSetSummary = (string)weatherData.daily.data[i].summary;
         tempForecast.setIcon((string)weatherData.daily.data[i].icon);
         tempForecast.getSetSunrise = (string)weatherData.daily.data[i].sunriseTime.ToString();
@@ -98,6 +99,7 @@ namespace Draconine
 
       current.getSetDate = (string)weatherData.currently.time;
       current.getSetLongDate = (string)weatherData.currently.time;
+      current.getSetDay = (string)weatherData.currently.time;
       current.getSetSummary = (string)weatherData.currently.summary;
       current.setIcon((string)weatherData.currently.icon);
       current.getSetPrecipIntensity = (float)weatherData.currently.precipIntensity;

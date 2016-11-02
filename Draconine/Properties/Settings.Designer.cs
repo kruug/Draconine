@@ -26,12 +26,12 @@ namespace Draconine.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("current")]
-        public string View {
+        public string ViewSettings {
             get {
-                return ((string)(this["View"]));
+                return ((string)(this["ViewSettings"]));
             }
             set {
-                this["View"] = value;
+                this["ViewSettings"] = value;
             }
         }
     }

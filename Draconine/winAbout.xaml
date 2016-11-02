@@ -16,7 +16,7 @@
         <GroupBox x:Name="grpCopyright" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Width="195" Height="106">
             <Grid>
                 <Label x:Name="lblName" Content="Draconine" HorizontalAlignment="Left" VerticalAlignment="Top" Width="87" FontWeight="Bold"/>
-                <Label x:Name="lblVersion" Content="Version 2.2.6" Margin="92,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91"/>
+                <Label x:Name="lblVersion" Content="Version 2.3.0" Margin="92,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91"/>
                 <Label x:Name="lblCopyright" Content="Copyright 2016 DraconemSoft" Margin="0,26,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="183"/>
                 <Label x:Name="lblLicense" Content="Released under the MIT License" Margin="0,52,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="10" Width="183"/>
                 <Label x:Name="lblLink" Content="DraconemSoft on the Web" Margin="0,75,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="183" FontSize="10" Foreground="Blue" MouseDown="lblLink_MouseDown"/>

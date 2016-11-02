@@ -2,17 +2,17 @@
 
 Currently, there is no decent weather forecasting program for the Windows desktop environment.  The Weather Channel does have one, but it's pretty large, a little flaky, and includes large advertisements.  This project is geared towards accomplishing the same goal but doing so in a smaller window with only the necessary information.
 
-This program does use the Forecast API and does require an API key available from [https://developer.forecast.io/](https://developer.forecast.io/ "Forecast.IO").
+This program does use the Forecast API and does require an API key available from [https://darksky.net/dev/](https://darksky.net/dev/ "Dark Sky").
 
 [Download compiled versions here](https://kruug.org/draconemsoft/archive/desktopweather/).
 
 ## Screenshot
 
-![App in action](https://kruug.org/draconemsoft/images/desktopweather/DesktopWeather_2_2_6.png)
+![App in action](https://kruug.org/draconemsoft/images/desktopweather/DesktopWeather_v2_3_0.png)
 
 ## Installation
 
-This is a "portable" program.  No installation required.
+This is a "portable" program.  No installation required.  Unzip the files to a folder and run "Draconine.exe".  Ensure all of the files stay together and create shortcuts if wanted.
 
 ## Requirements
 
@@ -48,6 +48,7 @@ Currently, there is a constant available in the code for the API key.  You will 
  - 2016-01-12: Fixed issue with pop-ups disposing early. (v2.2)
  - 2016-02-08: Fixed encoding error.  Strings are now UTF32 to allow for full range of characters from API.
  - 2016-04-13: v2.2.6 Added alert button functionality to "Currently" option to be the same as the 3-day forecast window.
+ - 2016-11-02: v2.3.0 Rebuilt program using WPF instead of WinForms.  Added day notations to 3-day forecast window.  Updated logo and links for source due to name change.
 
 ## Future/To-Do
 

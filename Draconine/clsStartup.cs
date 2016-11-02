@@ -1,34 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
 
 namespace Draconine
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
-    public partial class App : Application
-    {
-    
-    private void Application_Startup(object sender, StartupEventArgs e)
+  class clsStartup
+  {
+    private void Application_Startup()
     {
       winCurrently currently = new winCurrently();
       win3Day threeDay = new win3Day();
       winAbout about = new winAbout();
 
-      switch (Draconine.Properties.Settings.Default.ViewSettings)
+      switch (Properties.Settings.Default.ViewSettings)
       {
         case "current":
-          MainWindow = currently;
           currently.Show();
           break;
         case "three":
-          MainWindow = threeDay;
           threeDay.Show();
           break;
         /*case "eight":

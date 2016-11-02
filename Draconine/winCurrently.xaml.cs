@@ -25,6 +25,7 @@ namespace Draconine
 
     clsForecast[] forecast = new clsForecast[10];
     clsDataGetter data = new clsDataGetter();
+    
     public winCurrently()
         {
             InitializeComponent();
