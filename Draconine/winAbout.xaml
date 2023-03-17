@@ -16,14 +16,17 @@
         <GroupBox x:Name="grpCopyright" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Width="195" Height="106">
             <Grid>
                 <Label x:Name="lblName" Content="Draconine" HorizontalAlignment="Left" VerticalAlignment="Top" Width="87" FontWeight="Bold"/>
-                <Label x:Name="lblVersion" Content="Version 2.3.0" Margin="92,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91"/>
-                <Label x:Name="lblCopyright" Content="Copyright 2016 DraconemSoft" Margin="0,26,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="183"/>
+                <Label x:Name="lblVersion" Content="Version 2.9.1" Margin="92,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91"/>
+                <Label x:Name="lblCopyright" Content="Copyright 2023 DraconemSoft" Margin="0,26,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="183"/>
                 <Label x:Name="lblLicense" Content="Released under the MIT License" Margin="0,52,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="10" Width="183"/>
                 <Label x:Name="lblLink" Content="DraconemSoft on the Web" Margin="0,75,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="183" FontSize="10" Foreground="Blue" MouseDown="lblLink_MouseDown"/>
             </Grid>
         </GroupBox>
-        <GroupBox x:Name="grpPowered" HorizontalAlignment="Right" Margin="0,95,10,0" VerticalAlignment="Top" Width="195" Height="85" Background="Black">
-            <Image x:Name="image" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Source="Resources/dark_sky_logo.png"/>
+        <GroupBox x:Name="grpPowered" HorizontalAlignment="Right" Margin="0,95,10,0" VerticalAlignment="Top" Width="195" Height="85" Background="white">
+            <Grid>
+                <Label FontSize="9">Weather data provided by OpenWeather</Label>
+                <Image x:Name="image" HorizontalAlignment="Center" Source="Resources/openweather_logo.png" Margin="0,10,0,-10"/>
+            </Grid>
         </GroupBox>
         <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="275,180,0,0" VerticalAlignment="Top" Width="75" Click="btnClose_Click"/>
     </Grid>

@@ -38,8 +38,11 @@
                 <Label x:Name="lblDayAfterDate" Content="Date" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Bottom" Height="25" FontSize="12" FontWeight="Bold"/>
             </Grid>
         </GroupBox>
-        <GroupBox x:Name="grpLogo" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top" Height="64" Width="100" BorderThickness="0" Background="Black" MouseDown="imgLogo_MouseDown">
-            <Image x:Name="imgLogo" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Source="Resources/dark_sky_logo.png"/>
+        <GroupBox x:Name="grpLogo" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top" Height="64" Width="100" BorderThickness="0" Background="white" MouseDown="imgLogo_MouseDown">
+            <Grid>
+                <TextBlock TextWrapping="WrapWithOverflow" FontSize="7">Weather data provided by OpenWeather</TextBlock>
+                <Image x:Name="imgLogo" HorizontalAlignment="Center" Margin="0,10,0,-10" VerticalAlignment="Center" Source="Resources/openweather_logo.png"/>
+            </Grid>
         </GroupBox>
         <Button x:Name="btnRefresh" HorizontalAlignment="Left" Margin="417,164,0,0" VerticalAlignment="Top" Width="25" Click="btnRefresh_Click">
             <Image x:Name="imgRefresh" Source="pack://siteoforigin:,,,/Resources/refresh.png"/>

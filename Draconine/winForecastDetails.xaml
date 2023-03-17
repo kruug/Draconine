@@ -61,8 +61,9 @@
             </Grid>
         </GroupBox>
         <GroupBox x:Name="grpLogo" HorizontalAlignment="Left" Margin="10,535,0,0" VerticalAlignment="Top" Height="80" Width="290" BorderThickness="0" MouseDown="grpLogo_MouseDown">
-            <Grid Margin="0,0,0,0" Background="Black">
-                <Image x:Name="image" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Resources/dark_sky_logo.png"/>
+            <Grid Margin="0,0,0,0" Background="white">
+                <Label HorizontalAlignment="Center">Weather data provided by OpenWeather</Label>
+                <Image x:Name="image" Source="Resources/openweather_logo.png" Margin="87,14,87,-4"/>
             </Grid>
         </GroupBox>
         <GroupBox x:Name="grpClose" HorizontalAlignment="Left" Margin="10,620,0,0" VerticalAlignment="Top" Height="40" Width="290" BorderThickness="0">

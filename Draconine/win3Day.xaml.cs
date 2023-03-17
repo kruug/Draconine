@@ -44,7 +44,7 @@ namespace Draconine
 
     private void updateData()
     {
-      forecast = data.getForecast(forecast);
+      /*forecast = data.getForecast(forecast);
       
       lblCurrentTemp.Content = forecast[9].getSetTemp.ToString() + "\u00B0" + forecast[9].Units;
       lblTodayTemp.Content = forecast[0].getSetHigh.ToString("0") + "/" + forecast[0].getSetLow.ToString("0") + "\u00B0" + forecast[0].Units;
@@ -80,7 +80,7 @@ namespace Draconine
       {
         imgAlert.Source = new BitmapImage(new Uri("pack://application:,,,/Resources/weather_alert_no.png"));
         btnAlert.IsEnabled = false;
-      }
+      }*/
 
     }
     private void imgLogo_MouseDown(object sender, EventArgs e)

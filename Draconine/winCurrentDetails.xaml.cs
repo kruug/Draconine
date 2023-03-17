@@ -68,7 +68,7 @@ namespace Draconine
 
     private void grpLogo_MouseDown(object sender, EventArgs e)
     {
-      Process.Start("https://darksky.net/poweredby/");
+      Process.Start("https://openweathermap.org/");
     }
   }
 }

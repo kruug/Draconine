@@ -35,7 +35,7 @@ namespace Draconine
     float humidity = 0; // A numerical value between 0 and 1 (inclusive) representing the relative humidity
     float windSpeed = 0; //  A numerical value representing the wind speed
     int windBearing = 0; // A numerical value representing the direction that the wind is coming from in degrees, with true north at 0° and progressing clockwise
-    float visibility = 0; // A numerical value representing the average visibility in miles, capped at 10 miles
+    double visibility = 0; // A numerical value representing the average visibility in miles, capped at 10 miles
     float cloudCover = 0; // A numerical value between 0 and 1 (inclusive) representing the percentage of sky occluded by clouds
     float pressure = 0; // A numerical value representing the sea-level air pressure in millibars
     float ozone = 0; // A numerical value representing the columnar density of total atmospheric ozone at the given time in Dobson units
@@ -65,7 +65,8 @@ namespace Draconine
 
     public Uri getIcon()
     {
-      return new Uri("pack://application:,,,/Resources/weather-icons/" + icon + ".png");
+      return new Uri("https://openweathermap.org/img/wn/" + icon + "@2x.png");
+      //return new Uri("pack://application:,,,/Resources/weather-icons/" + icon + ".png");
     }
 
     public Uri convertPhase(float phase)
@@ -135,7 +136,7 @@ namespace Draconine
       }
       else if (bearing > 225 && bearing <= 315)
       {
-        windBearingImage_tmp = new Uri("pack://application:,,,/Resources/weather-icons/png");
+        windBearingImage_tmp = new Uri("pack://application:,,,/Resources/weather-icons/east.png");
       }
 
       return windBearingImage_tmp;
@@ -461,7 +462,7 @@ namespace Draconine
       set
       {
 
-        humidity = value * 100;
+        humidity = value;
       }
     }
 
@@ -497,7 +498,7 @@ namespace Draconine
       return windBearingImage;
     }
 
-    public float getSetVisibility
+    public double getSetVisibility
     {
       get
       {
@@ -506,7 +507,7 @@ namespace Draconine
       set
       {
 
-        visibility = value;
+        visibility = Math.Round((value / 1609), 2);
       }
     }
 
@@ -518,8 +519,8 @@ namespace Draconine
       }
       set
       {
-
-        cloudCover = value * 100;
+        cloudCover = value;
+        //cloudCover = value * 100;
       }
     }
 

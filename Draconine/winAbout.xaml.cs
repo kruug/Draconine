@@ -31,7 +31,7 @@ namespace Draconine
 
     private void imgLogo_MouseDown(object sender, EventArgs e)
     {
-      System.Diagnostics.Process.Start("https://forecast.io/");
+      System.Diagnostics.Process.Start("https://openweathermap.org/");
     }
 
     private void btnClose_Click(object sender, EventArgs e)
