@@ -55,5 +55,10 @@ namespace Draconine
 
       this.Close();
     }
-  }
+
+        private void rad3Day_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+    }
 }

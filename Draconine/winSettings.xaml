@@ -13,8 +13,8 @@
                 <Image x:Name="img3Day" HorizontalAlignment="Center" Height="47" Margin="128,70,129,0" VerticalAlignment="Top" Width="205" Source="Resources/3-Day.png"/>
                 <Image x:Name="img8Day" HorizontalAlignment="Left" Height="47" Margin="0,140,0,0" VerticalAlignment="Top" Width="460" Source="Resources/8-Day.png"/>
                 <RadioButton x:Name="radCurrently" Content="Current View" HorizontalAlignment="Left" Margin="193,52,0,0" VerticalAlignment="Top"/>
-                <RadioButton x:Name="rad3Day" Content="3 Day View" HorizontalAlignment="Left" Margin="193,122,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.494,5.156"/>
-                <RadioButton x:Name="rad8Day" Content="8 Day View" HorizontalAlignment="Left" Margin="193,192,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.494,5.156"/>
+                <RadioButton x:Name="rad3Day" Content="3 Day View" HorizontalAlignment="Left" Margin="193,122,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.494,5.156" Checked="rad3Day_Checked" IsChecked="True"/>
+                <RadioButton x:Name="rad8Day" Content="8 Day View" HorizontalAlignment="Left" Margin="193,192,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.494,5.156" IsEnabled="False"/>
             </Grid>
         </GroupBox>
         <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Center" Height="20" Margin="0,240,0,0" VerticalAlignment="Top" Width="75" Click="btnSave_Click"/>

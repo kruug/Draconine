@@ -79,7 +79,6 @@ C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\weather_aler
 C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\weather_alert_no.png
 C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\weather_alert_yes.png
 C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\weather_icon.ico
-C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\weather-icons\clear-day.png
 C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\weather-icons\clear-night.png
 C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\weather-icons\cloudy.png
 C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\weather-icons\compass.png
@@ -110,7 +109,6 @@ C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Draconine.pdb
 C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Newtonsoft.Json.dll
 C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Newtonsoft.Json.xml
 C:\Users\kruug\source\repos\Draconine\Draconine\obj\Debug\Draconine.csproj.AssemblyReference.cache
-C:\Users\kruug\source\repos\Draconine\Draconine\obj\Debug\Draconine.csproj.SuggestedBindingRedirects.cache
 C:\Users\kruug\source\repos\Draconine\Draconine\obj\Debug\win3Day.g.cs
 C:\Users\kruug\source\repos\Draconine\Draconine\obj\Debug\winAbout.g.cs
 C:\Users\kruug\source\repos\Draconine\Draconine\obj\Debug\winAlert.g.cs
@@ -134,6 +132,7 @@ C:\Users\kruug\source\repos\Draconine\Draconine\obj\Debug\Draconine.g.resources
 C:\Users\kruug\source\repos\Draconine\Draconine\obj\Debug\Draconine.Properties.Resources.resources
 C:\Users\kruug\source\repos\Draconine\Draconine\obj\Debug\Draconine.csproj.GenerateResource.cache
 C:\Users\kruug\source\repos\Draconine\Draconine\obj\Debug\Draconine.csproj.CoreCompileInputs.cache
-C:\Users\kruug\source\repos\Draconine\Draconine\obj\Debug\Draconine.csproj.CopyComplete
+C:\Users\kruug\source\repos\Draconine\Draconine\obj\Debug\Draconine.csproj.Up2Date
 C:\Users\kruug\source\repos\Draconine\Draconine\obj\Debug\Draconine.exe
 C:\Users\kruug\source\repos\Draconine\Draconine\obj\Debug\Draconine.pdb
+C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\weather-icons\clear-day.png

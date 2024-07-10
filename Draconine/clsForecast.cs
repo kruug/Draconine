@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Draconine.Properties;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -50,6 +51,7 @@ namespace Draconine
     float feelsLike = 0; // A numerical value representing the apparent (or “feels like”) temperature
 
     string forecastUnits = "";
+        //Uri image = new Uri(Resources.clear_day);
     Uri image = new Uri("pack://application:,,,/Resources/weather-icons/clear-day.png");
     Uri phase = new Uri("pack://application:,,,/Resources/weather-icons/clear-night.png");
     Uri windBearingImage = new Uri("pack://application:,,,/Resources/weather-icons/compass.png");
@@ -65,8 +67,8 @@ namespace Draconine
 
     public Uri getIcon()
     {
-      return new Uri("https://openweathermap.org/img/wn/" + icon + "@2x.png");
-      //return new Uri("pack://application:,,,/Resources/weather-icons/" + icon + ".png");
+      //return new Uri("https://openweathermap.org/img/wn/" + icon + "@2x.png");
+      return new Uri("pack://application:,,,/Resources/weather-icons/" + icon + ".png");
     }
 
     public Uri convertPhase(float phase)

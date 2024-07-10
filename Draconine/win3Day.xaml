@@ -47,7 +47,7 @@
         <Button x:Name="btnRefresh" HorizontalAlignment="Left" Margin="417,164,0,0" VerticalAlignment="Top" Width="25" Click="btnRefresh_Click">
             <Image x:Name="imgRefresh" Source="pack://siteoforigin:,,,/Resources/refresh.png"/>
         </Button>
-        <Button x:Name="btnAbout" HorizontalAlignment="Left" Margin="387,164,0,0" VerticalAlignment="Top" Width="25" Click="btnAbout_Click">
+        <Button x:Name="btnAbout" HorizontalAlignment="Left" Margin="387,164,0,0" VerticalAlignment="Top" Width="25"> <!--="btnAbout_Click">-->
             <Image x:Name="imgAbout" Source="pack://siteoforigin:,,,/Resources/about.png"/>
         </Button>
         <Button x:Name="btnSettings" HorizontalAlignment="Left" Margin="357,164,0,0" VerticalAlignment="Top" Width="25" Click="btnSettings_Click">

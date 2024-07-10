@@ -3,18 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Draconine
 {
-  class clsStartup
+  class Program
   {
+        public static void Main()
+        {
+            winCurrently currently = new winCurrently();
+            currently.Show();
+        }
     private void Application_Startup()
     {
       winCurrently currently = new winCurrently();
       win3Day threeDay = new win3Day();
-      winAbout about = new winAbout();
 
-      switch (Properties.Settings.Default.ViewSettings)
+            currently.Show();
+
+      /*switch (Properties.Settings.Default.ViewSettings.ToLower())
       {
         case "current":
           currently.Show();
@@ -24,11 +31,11 @@ namespace Draconine
           break;
         /*case "eight":
           eightDay.Show();
-          break;*/
-        default:
-          about.Show();
           break;
-      }
+        default:
+          currently.Show();
+          break;
+      }*/
     }
   }
 }
