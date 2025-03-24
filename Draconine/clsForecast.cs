@@ -126,19 +126,19 @@ namespace Draconine
     {
       if (bearing <= 45 || bearing > 315)
       {
-        windBearingImage_tmp = new Uri("pack://application:,,,/Resources/weather-icons/south.png");
+        windBearingImage_tmp = new Uri("pack://application:,,,/Resources/weather-icons/north.png");
       }
       else if (bearing > 45 && bearing <= 135)
       {
-        windBearingImage_tmp = new Uri("pack://application:,,,/Resources/weather-icons/west.png");
+        windBearingImage_tmp = new Uri("pack://application:,,,/Resources/weather-icons/east.png");
       }
       else if (bearing > 135 && bearing <= 225)
       {
-        windBearingImage_tmp = new Uri("pack://application:,,,/Resources/weather-icons/north.png");
+        windBearingImage_tmp = new Uri("pack://application:,,,/Resources/weather-icons/south.png");
       }
       else if (bearing > 225 && bearing <= 315)
       {
-        windBearingImage_tmp = new Uri("pack://application:,,,/Resources/weather-icons/east.png");
+        windBearingImage_tmp = new Uri("pack://application:,,,/Resources/weather-icons/west.png");
       }
 
       return windBearingImage_tmp;
@@ -464,7 +464,7 @@ namespace Draconine
       set
       {
 
-        humidity = value;
+        humidity = value * 100;
       }
     }
 
@@ -508,8 +508,8 @@ namespace Draconine
       }
       set
       {
-
-        visibility = Math.Round((value / 1609), 2);
+                //visibility = Math.Round((value / 1609), 2);
+                visibility = Math.Round(value, 2);
       }
     }
 
@@ -521,8 +521,8 @@ namespace Draconine
       }
       set
       {
-        cloudCover = value;
-        //cloudCover = value * 100;
+        //cloudCover = value;
+        cloudCover = value * 100;
       }
     }
 

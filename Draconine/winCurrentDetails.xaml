@@ -54,8 +54,8 @@
         </GroupBox>
         <GroupBox x:Name="grpLogo" HorizontalAlignment="Left" Margin="10,360,0,0" VerticalAlignment="Top" Height="132" Width="230" BorderThickness="0" MouseDown="grpLogo_MouseDown">
             <Grid Margin="0,0,0,0" Background="White">
-                <Label FontSize="11">Weather data provided by OpenWeather</Label>
-                <Image x:Name="image" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Resources/openweather_logo.png"/>
+                <Label FontSize="11">Weather data provided by Pirate Weather</Label>
+                <Image x:Name="image" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Resources/pirateweather_logo.png"/>
             </Grid>
         </GroupBox>
         <GroupBox x:Name="grpClose" HorizontalAlignment="Left" Margin="10,497,0,0" VerticalAlignment="Top" Height="80" Width="481" BorderThickness="0">

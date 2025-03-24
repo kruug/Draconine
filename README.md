@@ -2,7 +2,7 @@
 
 Currently, there is no decent weather forecasting program for the Windows desktop environment.  The Weather Channel does have one, but it's pretty large, a little flaky, and includes large advertisements.  This project is geared towards accomplishing the same goal but doing so in a smaller window with only the necessary information.
 
-This program does use the Forecast API and does require an API key available from [https://darksky.net/dev/](https://darksky.net/dev/ "Dark Sky").
+This program does use the Forecast API and does require an API key available from [https://pirate-weather.apiable.io/](https://pirate-weather.apiable.io/ "Pirate Weather").
 
 [Download compiled versions here](https://kruug.org/draconemsoft/archive/desktopweather/).
 
@@ -49,6 +49,7 @@ Currently, there is a constant available in the code for the API key.  You will 
  - 2016-02-08: Fixed encoding error.  Strings are now UTF32 to allow for full range of characters from API.
  - 2016-04-13: v2.2.6 Added alert button functionality to "Currently" option to be the same as the 3-day forecast window.
  - 2016-11-02: v2.3.0 Rebuilt program using WPF instead of WinForms.  Added day notations to 3-day forecast window.  Updated logo and links for source due to name change.
+ - 2024-07-11: v2.3.1 Changed source to Pirate Weather. This API provides an API compatible to what Dark Sky had offered before being acquired by Apple.
 
 ## Future/To-Do
 
@@ -59,7 +60,7 @@ Currently, there is a constant available in the code for the API key.  You will 
 
 The MIT License (MIT)
 
-Copyright (c) 2016 Viktor Kruug
+Copyright (c) 2015 Viktor Kruug
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

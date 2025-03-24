@@ -4,7 +4,4 @@
              xmlns:local="clr-namespace:Draconine"
              Startup="Application_Startup"
              ShutdownMode="OnMainWindowClose">
-    <Application.Resources>
-         
-    </Application.Resources>
 </Application>

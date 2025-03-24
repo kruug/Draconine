@@ -43,7 +43,7 @@ namespace Draconine
       lblWindBearing.Content = "Bearing: " + forecast.getSetWindBearing + "\u00B0";
       imgWindBearing.Source = new BitmapImage(forecast.getWindBearing());
       
-      if (forecast.getSetVisibility == 11)
+      if (forecast.getSetVisibility >= 11)
       {
         lblVisibility.Content = "Visibility: 10+ miles";
       }
@@ -68,7 +68,7 @@ namespace Draconine
 
     private void grpLogo_MouseDown(object sender, EventArgs e)
     {
-      Process.Start("https://openweathermap.org/");
+      Process.Start("https://pirateweather.net/");
     }
   }
 }

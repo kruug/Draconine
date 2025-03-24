@@ -11,17 +11,20 @@ namespace Draconine
   {
         public static void Main()
         {
-            winCurrently currently = new winCurrently();
-            currently.Show();
+            System.Diagnostics.Debug.WriteLine("Program Started");
+            win3Day day3 = new win3Day();
+            day3.Show();
+            /*winCurrently currently = new winCurrently();
+            currently.Show();*/
         }
-    private void Application_Startup()
+    /*private void Application_Startup()
     {
       winCurrently currently = new winCurrently();
       win3Day threeDay = new win3Day();
 
             currently.Show();
 
-      /*switch (Properties.Settings.Default.ViewSettings.ToLower())
+      switch (Properties.Settings.Default.ViewSettings)
       {
         case "current":
           currently.Show();
@@ -29,13 +32,13 @@ namespace Draconine
         case "three":
           threeDay.Show();
           break;
-        /*case "eight":
+        case "eight":
           eightDay.Show();
           break;
         default:
           currently.Show();
           break;
-      }*/
-    }
+      }
+    }*/
   }
 }

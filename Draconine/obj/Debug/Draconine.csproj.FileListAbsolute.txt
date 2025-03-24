@@ -70,15 +70,16 @@ C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\3-Day.png
 C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\8-Day.png
 C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\about.png
 C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\Currently.png
-C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\dark_sky_logo.png
 C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\gear.png
 C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\logo.png
 C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\logo_back.png
+C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\pirateweather_logo.png
 C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\refresh.png
 C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\weather_alert.png
 C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\weather_alert_no.png
 C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\weather_alert_yes.png
 C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\weather_icon.ico
+C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\weather-icons\clear-day.png
 C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\weather-icons\clear-night.png
 C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\weather-icons\cloudy.png
 C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\weather-icons\compass.png
@@ -135,4 +136,3 @@ C:\Users\kruug\source\repos\Draconine\Draconine\obj\Debug\Draconine.csproj.CoreC
 C:\Users\kruug\source\repos\Draconine\Draconine\obj\Debug\Draconine.csproj.Up2Date
 C:\Users\kruug\source\repos\Draconine\Draconine\obj\Debug\Draconine.exe
 C:\Users\kruug\source\repos\Draconine\Draconine\obj\Debug\Draconine.pdb
-C:\Users\kruug\source\repos\Draconine\Draconine\bin\Debug\Resources\weather-icons\clear-day.png

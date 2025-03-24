@@ -143,16 +143,6 @@ namespace Draconine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap dark_sky_logo1 {
-            get {
-                object obj = ResourceManager.GetObject("dark_sky_logo1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap east {
             get {
                 object obj = ResourceManager.GetObject("east", resourceCulture);
@@ -445,6 +435,16 @@ namespace Draconine.Properties {
         internal static System.Drawing.Bitmap west {
             get {
                 object obj = ResourceManager.GetObject("west", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wind {
+            get {
+                object obj = ResourceManager.GetObject("wind", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
