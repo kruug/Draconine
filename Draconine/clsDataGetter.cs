@@ -1,19 +1,20 @@
-﻿using Newtonsoft.Json.Linq;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Net;
 using System.Net.Http;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json.Linq;
+using System.Diagnostics;
 
 namespace Draconine
 {
     class clsDataGetter
     {
         const string API_KEY = Credentials.ApiKey;
-        static readonly HttpClient client = new HttpClient();
+        //static readonly HttpClient client = new HttpClient();
 
         clsForecast current = new clsForecast();
         float flat = 0;
@@ -25,6 +26,7 @@ namespace Draconine
 
         public void getLatLon()
         {
+            Debug.WriteLine("Getting LatLong");
             //var data = wcLatLon.DownloadString("http://ip-api.com/json");
             var data = wcLatLon.DownloadString("http://ipwho.is/");
             JObject o = JObject.Parse(data);
@@ -32,48 +34,53 @@ namespace Draconine
             lon = o["longitude"].ToString();
             flat = float.Parse(lat, CultureInfo.InvariantCulture.NumberFormat);
             flon = float.Parse(lon, CultureInfo.InvariantCulture.NumberFormat);
+            Debug.WriteLine("Got LatLong");
         }
 
         public async Task<clsForecast[]> GetForecast(clsForecast[] forecast)
         {
             // API Key, Lat, Long, Unit
 
-            //string url = "https://api.forecast.io/forecast/" + API_KEY + "/" + flat + "," + flon;
-            //string url = "https://api.openweathermap.org/data/2.5/weather?lat=" + flat + "&lon=" + flon + "&appid=" + API_KEY + "&units=imperial";
-            //var request = new ForecastIORequest(API_KEY, flat, flon, Unit.auto);
-            //var response = new WebClient().DownloadData(url);
-            //UTF32Encoding utf32 = new UTF32Encoding();
-            //byte[] utf32Array = Encoding.Convert(Encoding.UTF8, Encoding.UTF32, response);
-            //string finalString = utf32.GetString(utf32Array);
-            //dynamic weatherData = JObject.Parse(finalString.ToString());
-
             // Current Forecast
-            //string current_url = "https://api.openweathermap.org/data/2.5/weather?lat=" + flat + "&lon=" + flon + "&appid=" + API_KEY + "&units=imperial";
+            Debug.WriteLine("Getting forecast");
             string current_url = "https://api.pirateweather.net/forecast/" + API_KEY + "/" + flat + "," + flon;
             HttpResponseMessage current_response = new HttpResponseMessage();
             string responseBody = "";
             try // System.Net.WebException: 'The remote server returned an error: (502) Bad Gateway.'
             {
-                current_response = await client.GetAsync(current_url);
-                current_response.EnsureSuccessStatusCode();
-                responseBody = await current_response.Content.ReadAsStringAsync();
-            } catch (HttpRequestException ex)
+                using (var client = new HttpClient())
+                {
+                    Debug.WriteLine("Getting response");
+                    current_response = await client.GetAsync(current_url).ConfigureAwait(false);
+                    Debug.WriteLine("Got response");
+                    Debug.WriteLine("Checking Status Code");
+                    if (current_response.IsSuccessStatusCode)
+                    {
+                        Debug.WriteLine("Status Code Checked");
+                        Debug.WriteLine("Reading response");
+                        responseBody = await current_response.Content.ReadAsStringAsync();
+                        Debug.WriteLine("Response read");
+                    }
+                }
+            }
+            catch (HttpRequestException ex)
             {
                 switch (ex.StatusCode)
                 {
                     case HttpStatusCode.NotFound: // 404
+                        Debug.WriteLine("Error: 404");
                         break;
 
                     case HttpStatusCode.InternalServerError: // 500
+                        Debug.WriteLine("Error 500");
                         break;
 
                     default:
+                        Debug.WriteLine("Error getting forecast");
                         throw;
                 }
             }
 
-            //byte[] current_utf32Array = Encoding.Convert(Encoding.UTF8, Encoding.UTF32, current_response.Content.ToString());
-            //string current_String = utf32.GetString(current_utf32Array);
             dynamic current_Data = JObject.Parse(responseBody);
 
             current.getSetDate = (string)current_Data.currently.time;
@@ -177,6 +184,7 @@ namespace Draconine
             current.Units = (string)current_Data.flags.units;
 
             forecast[9] = current;
+            Debug.WriteLine("Got forecast");
             return forecast;
         }
     }

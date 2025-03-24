@@ -14,29 +14,29 @@ using System.Windows.Shapes;
 
 namespace Draconine
 {
-  /// <summary>
-  /// Interaction logic for winAbout.xaml
-  /// </summary>
-  public partial class winAbout : Window
-  {
-    public winAbout()
+    /// <summary>
+    /// Interaction logic for winAbout.xaml
+    /// </summary>
+    public partial class winAbout : Window
     {
-      InitializeComponent();
-    }
+        public winAbout()
+        {
+            InitializeComponent();
+        }
 
-    private void lblLink_MouseDown(object sender, EventArgs e)
-    {
-      System.Diagnostics.Process.Start("http://kruug.org/draconemsoft");
-    }
+        private void lblLink_MouseDown(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://kruug.org/draconemsoft");
+        }
 
-    private void imgLogo_MouseDown(object sender, EventArgs e)
-    {
-      System.Diagnostics.Process.Start("https://pirateweather.net/");
-    }
+        private void imgLogo_MouseDown(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://pirateweather.net/");
+        }
 
-    private void btnClose_Click(object sender, EventArgs e)
-    {
-      Close();
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
-  }
 }

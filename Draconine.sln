@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draconine", "Draconine\Draconine.csproj", "{C40BC8C1-B12A-46E5-8141-9B1836D4EB02}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draconine", "Draconine\Draconine.csproj", "{109371AA-628C-4321-95FB-73825111A1B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C40BC8C1-B12A-46E5-8141-9B1836D4EB02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C40BC8C1-B12A-46E5-8141-9B1836D4EB02}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C40BC8C1-B12A-46E5-8141-9B1836D4EB02}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C40BC8C1-B12A-46E5-8141-9B1836D4EB02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{109371AA-628C-4321-95FB-73825111A1B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{109371AA-628C-4321-95FB-73825111A1B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{109371AA-628C-4321-95FB-73825111A1B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{109371AA-628C-4321-95FB-73825111A1B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A281B8C0-5E68-46CC-8886-87D04CDEA166}
 	EndGlobalSection
 EndGlobal
